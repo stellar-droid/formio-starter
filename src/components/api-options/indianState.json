@@ -1,11 +1,23 @@
-{
-  "name": "LearnBestCoding",
-  "website": "www.learnbestcoding.com",
-  "email": "something@learnbestcoding.com",
-  "country": [
-    { "value": "USA", "name": "USA" },
-    { "value": "USA", "name": "Canada" },
-    { "value": "RPC", "name": "Japan" },
-    { "value": "ARATA", "name": "Australia" }
-  ]
-}
+ [
+    {
+      "value": "Andhra Pradesh",
+      "label": "Andhra Pradesh"
+    },
+    {
+      "value": "Arunachal Pradesh",
+      "label": "Arunachal Pradesh"
+    },
+    {
+      "value": "Assam",
+      "label": "Assam"
+    },
+    {
+      "value": "Bihar",
+      "label": "Bihar"
+    },
+    {
+      "value": "Chhattisgarh",
+      "label": "Chhattisgarh"
+    }
+    ]
+  
