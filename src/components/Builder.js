@@ -4,6 +4,7 @@ import { Card } from "react-bootstrap";
 import ReactJson from "react-json-view";
 import IndianStatesSelect from "./customComponent/IndianStatesSelect "; // Import your custom component
 import "../styles/Builder.css";
+import IndianCitySelect from "./customComponent/IndianCitySelect";
 
 const Builder = () => {
   const [jsonSchema, setSchema] = useState({ components: [] });
@@ -16,7 +17,7 @@ const Builder = () => {
       <FormBuilder
         form={jsonSchema}
         onChange={onFormChange}
-        customComponents={{ IndianStatesSelect }}
+        customComponents={{ IndianStatesSelect,IndianCitySelect }}
       />
       <Card title="Form JSON Schema" className="my-4">
         <Card.Body>
