@@ -17,17 +17,19 @@ export default class IndianStatesSelect extends FieldComponent {
   static schema() {
     return FieldComponent.schema({
       type: "select",
-      label: "Select Indian State",
-      key: "indianStates",
-      dataSrc: "json", // Set data source to URL
+      label: "Indian State",
+      key: "indianState",
+      placeholder: "Select your state",
+      dataSrc: "json",
       data: {
-        // url: 'https://mocki.io/v1/3bc06b43-9c01-4b27-802d-1edf295ed97e', // No URL needed as fetching from local file
-        json: indianState, // Use JSON data for options
-        
+        json: indianState, // Replace with empty array initially
       },
-
+      validate: {
+        required: true,
+      },
     });
   }
+
 
   static builderInfo = {
     title: "Indian States",

@@ -13,32 +13,40 @@ export default class IndianCitySelect extends FieldComponent {
        (comp) => comp.key === "indianStates"
      );
      // Add event listener for change event on statesSelect (if found)
-     if (statesSelect) {
-       statesSelect.on("componentChange", (event) => {
-        console.log("event",event)
-         this.setState({ selectedState: event.data.value });
-       });
-     } else {
-       console.warn("IndianStatesSelect component not found in the schema");
-     }
-     
+    //  if (statesSelect) {
+    //    statesSelect.on("componentChange", (event) => {
+    //     console.log("event",event)
+    //      this.setState({ selectedState: event.data.value });
+    //    });
+    //  } else {
+    //    console.warn("IndianStatesSelect component not found in the schema");
+    //  }
+    //  selectedStateCity = indianCity.filter(city => city.state === this.state.selectedState);
 
+    this.state.selectedState=   statesSelect?statesSelect.value:"";
 
 }
 
   static schema() {
+    
     return FieldComponent.schema({
       type: "select",
       label: "Select Indian City",
       key: "indianCity",
       dataSrc: "json", // Set data source to JSON
       data: {
-        json: indianCity, // Use JSON data for options
+        json: indianCity["MadhyaPradesh"], // Use JSON data for options
+        
+        // json: this.state.selectedState&&indianCity[this.state.selectedState], // Use JSON data for options
       },
-      componentChanged: (event) => {
-        console.log("event",event)
-      },
-      redrawOn:"any"
+      valueProperty: 'IndianCity_Name',
+      refreshOn: 'Forms.indianStates',
+      clearOnRefresh: true,
+    //   selectValues: 'Results',
+        validate: {
+          required: true
+        }
+      
     });
   }
 

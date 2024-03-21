@@ -1,66 +1,22 @@
-[
-  {
-    "id": "1",
-    "name": "Mumbai",
-    "state": "Maharashtra",
-    "value": "Mumbai",
-    "label": "Mumbai"
-  },
-  {
-    "id": "2",
-    "name": "Pune",
-    "state": "Maharashtra",
-    "value": "Pune",
-    "label": "Pune"
-  },
-  {
-    "id": "3",
-    "name": "Nagpur",
-    "state": "Maharashtra",
-    "value": "Nagpur",
-    "label": "Nagpur"
-  },
-  {
-    "id": "4",
-    "name": "Nashik",
-    "state": "Maharashtra",
-    "value": "Nashik",
-    "label": "Nashik"
-  },
-  {
-    "id": "5",
-    "name": "Indore",
-    "state": "Madhya Pradesh",
-    "value": "Indore",
-    "label": "Indore"
-  },
-    {
-        "id": "6",
-        "name": "Bhopal",
-        "state": "Madhya Pradesh",
-        "value": "Bhopal",
-        "label": "Bhopal"
-    },
-    {
-        "id": "7",
-        "name": "Jabalpur",
-        "state": "Madhya Pradesh",
-        "value": "Jabalpur",
-        "label": "Jabalpur"
-    },
-    {
-        "id": "8",
-        "name": "Gwalior",
-        "state": "Madhya Pradesh",
-        "value": "Gwalior",
-        "label": "Gwalior"
-    },
-    {
-        "id": "9",
-        "name": "Ujjain",
-        "state": "Madhya Pradesh",
-        "value": "Ujjain",
-        "label": "Ujjain"
-    }
-
-]
+{
+  "MadhyaPradesh": [
+    {"label": "Bhopal", "value": "bhopal"},
+    {"label": "Indore", "value": "indore"},
+    {"label": "Gwalior", "value": "gwalior"}
+  ],
+  "uttar-pradesh": [
+    {"label": "Lucknow", "value": "lucknow"},
+    {"label": "Kanpur", "value": "kanpur"},
+    {"label": "Agra", "value": "agra"}
+  ],
+  "bihar": [
+    {"label": "Patna", "value": "patna"},
+    {"label": "Gaya", "value": "gaya"},
+    {"label": "Bhagalpur", "value": "bhagalpur"}
+  ],
+  "Maharashtra": [
+    {"label": "Mumbai", "value": "mumbai"},
+    {"label": "Pune", "value": "pune"},
+    {"label": "Nagpur", "value": "nagpur"}
+  ]
+}
