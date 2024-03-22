@@ -1,11 +1,6 @@
 import { Formio, Components } from "formiojs";
 import indianState from "../api-options/indianState.json";
 
-
-
-
-
-
 const FieldComponent = Components.components.field;
 
 export default class IndianStatesSelect extends FieldComponent {
@@ -30,7 +25,6 @@ export default class IndianStatesSelect extends FieldComponent {
     });
   }
 
-
   static builderInfo = {
     title: "Indian States",
     group: "basic",
@@ -42,23 +36,23 @@ export default class IndianStatesSelect extends FieldComponent {
 
   //  attached() {
   //   super.attached();
-    // console.log('Fetching options from:', 'http://localhost:8080/indianStates.json');
-    // const response = await fetch('http://localhost:8080/indianStates.json');
-    // const states = await response.json();
-    // this.setState({ options: states }); // Update state with fetched options
-    // this.setState({ options: {
-    //   "name" : "LearnBestCoding",
-    //   "website" : "www.learnbestcoding.com",
-    //   "email" : "something@learnbestcoding.com",
-    //   "country" :[
-    //       {"value": "USA", "name" : "USA"},
-    //       {"value": "USA", "name" : "Canada"},
-    //       {"value": "RPC", "name" : "Japan"},
-    //       {"value": "ARATA", "name" : "Australia"}
-    //   ]
-    // } });
-    // // this.setState({ options: indianStates });
-    // console.log('Rendering IndianStatesSelect',indianState);
+  // console.log('Fetching options from:', 'http://localhost:8080/indianStates.json');
+  // const response = await fetch('http://localhost:8080/indianStates.json');
+  // const states = await response.json();
+  // this.setState({ options: states }); // Update state with fetched options
+  // this.setState({ options: {
+  //   "name" : "LearnBestCoding",
+  //   "website" : "www.learnbestcoding.com",
+  //   "email" : "something@learnbestcoding.com",
+  //   "country" :[
+  //       {"value": "USA", "name" : "USA"},
+  //       {"value": "USA", "name" : "Canada"},
+  //       {"value": "RPC", "name" : "Japan"},
+  //       {"value": "ARATA", "name" : "Australia"}
+  //   ]
+  // } });
+  // // this.setState({ options: indianStates });
+  // console.log('Rendering IndianStatesSelect',indianState);
 
   // }
 

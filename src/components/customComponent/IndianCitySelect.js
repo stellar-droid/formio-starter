@@ -45,7 +45,8 @@ export default class IndianCitySelect extends FieldComponent {
     //   selectValues: 'Results',
         validate: {
           required: true
-        }
+        },
+        searchField:"Maharashtra"
       
     });
   }
