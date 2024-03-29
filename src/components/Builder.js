@@ -7,6 +7,7 @@ import "../styles/Builder.css";
 import IndianCitySelect from "./customComponent/IndianCitySelect";
 import indianCity from "./api-options/indianCity.json";
 import ReCaptcha from "./customComponent/ReCaptcha";
+
 const Builder = () => {
   const [jsonSchema, setSchema] = useState({ components: [] });
   const onFormChange = (schema) => {
@@ -24,6 +25,8 @@ const Builder = () => {
         <IndianStatesSelect  />
         <IndianCitySelect cityData={indianCity}/>
         <ReCaptcha />
+        
+
         </FormBuilder>
       <Card title="Form JSON Schema" className="my-4">
         <Card.Body>
